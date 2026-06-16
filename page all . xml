@@ -1,0 +1,1984 @@
+
+
+## Image setup:
+
+<ImageView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   app:layout_constraintEnd_toEndOf="parent"
+   app:srcCompat="@drawable/top_tight" />
+<ImageView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   app:layout_constraintBottom_toBottomOf="parent"
+   app:srcCompat="@drawable/bottom_left" />
+<ImageView
+   android:layout_width="360dp"
+   android:layout_height="100dp"
+   android:layout_marginTop="350dp"
+   app:layout_constraintStart_toEndOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toTopOf="parent"
+   android:src="@drawable/tryit" />
+
+<TextView
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_marginTop="388dp"
+   android:gravity="center"
+   android:text="Time For School এ আপনাকে স্বাগতম।"
+   android:textSize="15sp"
+   android:textStyle="bold"
+   app:layout_constraintEnd_toEndOf="@+id/imageView"
+   app:layout_constraintStart_toEndOf="parent"
+   app:layout_constraintStart_toStartOf="parent"
+   app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+## Page 1 : First page Final
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity">
+
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="4dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:srcCompat="@drawable/top_tight"
+       tools:srcCompat="@drawable/top_tight" />
+
+
+   <soup.neumorphism.NeumorphCardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_rowWeight="1"
+       android:layout_columnWeight="1"
+       android:layout_margin="12dp"
+       app:neumorph_shadowColorDark="#D7983C"
+       app:neumorph_shadowColorLight="#FF9800"
+       app:neumorph_shadowElevation="6dp"
+
+
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="16dp"
+           android:orientation="vertical">
+           <soup.neumorphism.NeumorphTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="&quot;Time For School&quot; থেকে আপনাকে স্বাগতম।"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="16dp" />
+       </LinearLayout>
+   </soup.neumorphism.NeumorphCardView>
+
+
+
+
+   <soup.neumorphism.NeumorphCardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_rowWeight="1"
+       android:layout_columnWeight="1"
+       android:layout_margin="12dp"
+       app:neumorph_shadowColorDark="#E4B877"
+       app:neumorph_shadowColorLight="#FF9800"
+       app:neumorph_shadowElevation="6dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:padding="16dp"
+           android:orientation="vertical">
+           <soup.neumorphism.NeumorphTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="          শুরু করি          "
+              android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="25dp" />
+       </LinearLayout>
+   </soup.neumorphism.NeumorphCardView>
+
+
+
+
+   <ImageView
+       android:id="@+id/imageView7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:srcCompat="@drawable/tfsbotomleft"
+       tools:srcCompat="@drawable/tfsbotomleft" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+## Page 2: Class Selection
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity2">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp"
+       >
+
+
+
+
+
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           >
+           <soup.neumorphism.NeumorphTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="22sp"
+               android:textStyle="bold"
+               android:textColor="#03053C"
+
+
+
+
+               android:text="তুমি কোন শ্রেনিতে পড়ো ?"
+               android:layout_centerInParent="true"
+
+
+
+
+               />
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               app:neumorph_shadowColorDark="#FF9800"
+               app:neumorph_shadowColorLight="#FF9800"
+               app:neumorph_shadowElevation="6dp"
+               />
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:columnOrderPreserved="false"
+           android:alignmentMode="alignMargins"
+           android:rowCount="3"
+           android:columnCount="2"
+           >
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#E2F0D9"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class6"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="৬ষ্ঠ শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class7id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#DAE3F3"
+               app:neumorph_shadowColorLight="#DAE3F3"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class7"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="৭ম শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class8"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#FFF2CC"
+               app:neumorph_shadowColorLight="#FFF2CC"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class8"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="৮ম শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class9"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#0FEDEDED"
+               app:neumorph_shadowColorLight="#EDEDED"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class9"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="৯ম শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class10"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#EDEDED"
+               app:neumorph_shadowColorLight="#EDEDED"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class10"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="১০ম শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class11"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#DEEBF7"
+               app:neumorph_shadowColorLight="#DEEBF7"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class11"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="একাদশ শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/class12"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#DEEBF7"
+               app:neumorph_shadowColorLight="#DEEBF7"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/class12"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="দ্বাদশ শ্রেনি"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:id="@+id/more"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#FF9800"
+               app:neumorph_shadowColorLight="#FF9800"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="12dp"
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical"
+                   >
+                   <soup.neumorphism.NeumorphImageView
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:src="@drawable/more"
+                       />
+
+
+
+
+                   <soup.neumorphism.NeumorphTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="আরো.."
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:textSize="16dp"
+
+
+
+
+                       />
+
+
+
+
+
+
+
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </GridLayout>
+
+
+
+
+   </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+
+
+## Page 3: Class 6&7 বই এর নাম
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity3"
+   android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বাংলা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#E91E63"
+           app:neumorph_shadowColorLight="#FF5722" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="English"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#9C27B0"
+           app:neumorph_shadowColorLight="#FF9800" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="গণিত"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#673AB7"
+           app:neumorph_shadowColorLight="#FFC107" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বিজ্ঞান অনুসন্ধানী পাঠ"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#3F51B5"
+           app:neumorph_shadowColorLight="#FFEB3B" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বিজ্ঞান অনুশীলন বই"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#2196F3"
+           app:neumorph_shadowColorLight="#CDDC39" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইতিহাস ও সমাজিক বিজ্ঞান"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#03A9F4"
+           app:neumorph_shadowColorLight="#8BC34A" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ডিজিটাল প্রযুক্তি"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#00BCD4"
+           app:neumorph_shadowColorLight="#8BC34A" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="স্বাস্থ্য সুরক্ষা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#009688"
+           app:neumorph_shadowColorLight="#4CAF50" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="জীবন ও জীবিকা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#4CAF50"
+           app:neumorph_shadowColorLight="#009688" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="শিল্প ও সংস্কৃতি"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#8BC34A"
+           app:neumorph_shadowColorLight="#03A9F4" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইসলাম শিক্ষা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#CDDC39"
+           app:neumorph_shadowColorLight="#3F51B5" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="হিন্দুর্ধম শিক্ষা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FFEB3B"
+           app:neumorph_shadowColorLight="#9C27B0" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="খ্রিষ্টধর্ম শিক্ষা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FFC107"
+           app:neumorph_shadowColorLight="#E91E63" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বৌদ্ধধর্ম শিক্ষা "
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
+
+
+
+## Page 4:অধ্যায়ের নাম
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity5">
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp"
+       >
+
+
+       <GridLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:columnOrderPreserved="false"
+           android:alignmentMode="alignMargins"
+           android:rowCount="3"
+           android:columnCount="2"
+           >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#B1E98D"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ১"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#FFEB3B"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ২"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#673AB7"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৩"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#FF5722"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৪"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#665630"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৫"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#3A7E0E"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৬"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#4C9E97"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৭"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#344180"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৮"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#8A257D"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ৯"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#95102E"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ১০"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#A0AFA8"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ১১"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+           <soup.neumorphism.NeumorphCardView
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_rowWeight="1"
+               android:layout_columnWeight="1"
+               app:neumorph_shadowColorDark="#E2F0D9"
+               app:neumorph_shadowColorLight="#8A581A"
+               app:neumorph_shadowElevation="6dp"
+               android:layout_margin="20dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:padding="16dp"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="অধ্যায় ১২"
+                       android:textColorLink="#3ED538"
+                       android:textSize="26dp"
+                       android:textStyle="bold" />
+               </LinearLayout>
+           </soup.neumorphism.NeumorphCardView>
+
+
+
+
+       </GridLayout>
+
+
+   </LinearLayout>
+
+
+</ScrollView>
+
+
+## Page 5: Class 11&12 Subject
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".class11book">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বাংলা ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#E91E63"
+           app:neumorph_shadowColorLight="#FF5722" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বাংলা ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#9C27B0"
+           app:neumorph_shadowColorLight="#FF9800" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইংরেজি ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#673AB7"
+           app:neumorph_shadowColorLight="#FFC107" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইংরেজি ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#3F51B5"
+           app:neumorph_shadowColorLight="#FFEB3B" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="তথ্য ও যোগাযোগ প্রযুক্তি"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#2196F3"
+           app:neumorph_shadowColorLight="#CDDC39" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="উচ্চতর গণিত ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#03A9F4"
+           app:neumorph_shadowColorLight="#8BC34A" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="উচ্চতর গণিত ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#00BCD4"
+           app:neumorph_shadowColorLight="#8BC34A" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="পদার্থবিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#009688"
+           app:neumorph_shadowColorLight="#4CAF50" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="পদার্থবিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#4CAF50"
+           app:neumorph_shadowColorLight="#009688" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="রসায়ন ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#8BC34A"
+           app:neumorph_shadowColorLight="#03A9F4" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="রসায়ন ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#CDDC39"
+           app:neumorph_shadowColorLight="#3F51B5" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="জীববিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FFEB3B"
+           app:neumorph_shadowColorLight="#9C27B0" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="জীববিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FFC107"
+           app:neumorph_shadowColorLight="#E91E63" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="কৃষি শিক্ষা ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="কৃষি শিক্ষা ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ভূগোল ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ভূগোল ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="মনোবিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="মনোবিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="হিসাববিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="হিসাববিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+
+
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ফাইন্যান্স এন্ড ব্যাংকিং ১ম পত্র"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ফাইন্যান্স অ্যান্ড ব্যাংকিং ২য় পত্র"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="অর্থনীতি ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="অর্থনীতি ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="পরিসংখ্যান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="পরিসংখ্যান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="উৎপাদন ব্যবস্থাপনা ও বিপণন ১ম পত্র"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="উৎপাদন ব্যবস্থাপনা ও বিপণন ২য় পত্র"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ব্যবসা প্রতিষ্ঠান ও ব্যবস্থাপনা ১ম পত্র"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ব্যবসা প্রতিষ্ঠান ও ব্যবস্থাপনা ২য় পত্র"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="নাগরিক ও সুশাসন ১ম পত্র"
+           android:textSize="26sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="নাগরিক ও সুশাসন ২য় পত্র"
+           android:textSize="26sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইতিহাস ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইতিহাস ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইসলামের ইতিহাস ১ম পত্র"
+           android:textSize="26sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ইসলামের ইতিহাস ২য় পত্র"
+           android:textSize="26sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="সমাজবিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="সমাজবিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="লজিক ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="লজিক ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="মৃত্তিকা বিজ্ঞান ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="মৃত্তিকা বিজ্ঞান ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="চারু ও কারুকলা ১ম পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="চারু ও কারুকলা ২য় পত্র"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#FF9800"
+           app:neumorph_shadowColorLight="#F44336" />
+
+
+
+
+   </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+
+
+## Page 7: Last page
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".lastpage"
+   android:orientation="vertical">
+
+
+   <soup.neumorphism.NeumorphCardView
+
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_rowWeight="1"
+       android:layout_columnWeight="1"
+       android:layout_margin="12dp"
+
+
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+
+
+       app:neumorph_shadowColorDark="#EFE7DC"
+       app:neumorph_shadowColorLight="#CAC1B5"
+       app:neumorph_shadowElevation="6dp">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:orientation="vertical"
+           android:padding="16dp">
+
+
+           <soup.neumorphism.NeumorphTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" কাজ চলমান "
+               android:textColor="@color/black"
+               android:textSize="25dp"
+               android:textStyle="bold" />
+       </LinearLayout>
+   </soup.neumorphism.NeumorphCardView>
+
+
+
+
+</LinearLayout>
+
+## Page 8: more button
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/main"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".morebuttonclick">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+       <soup.neumorphism.NeumorphButton
+           android:id="@+id/admissionid"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ভর্তি পরিক্ষা"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#E91E63"
+           app:neumorph_shadowColorLight="#FF5722" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="চাকরি প্রস্তুতি"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#9C27B0"
+           app:neumorph_shadowColorLight="#FF9800" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="বি সি এস"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#673AB7"
+           app:neumorph_shadowColorLight="#FFC107" />
+       <soup.neumorphism.NeumorphButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:gravity="center"
+           android:text="ক্যারিয়ার ডেভেলপমেন্ট"
+           android:textSize="30sp"
+           android:textStyle="bold"
+           app:neumorph_shadowColorDark="#3F51B5"
+           app:neumorph_shadowColorLight="#FFEB3B" />
+
+
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
